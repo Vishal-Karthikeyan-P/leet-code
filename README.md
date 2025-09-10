@@ -1,6 +1,20 @@
-Total Programs  :  9
-Leet code       :  7
-Hacker Rank     :  2
-Easy            :  6
-Medium          :  3
-Hard            :  0
+
+### 📊 Statistics
+
+| Platform      | Problems Solved |
+| ------------- | --------------- |
+| 🟢 LeetCode   | 7               |
+| 🟠 HackerRank | 2               |
+| **Total**     | **9**           |
+
+---
+
+### 📈 Difficulty Breakdown
+
+| Difficulty | Count |
+| ---------- | ----- |
+| 🟢 Easy    | 6     |
+| 🟡 Medium  | 3     |
+| 🔴 Hard    | 0     |
+
+---
