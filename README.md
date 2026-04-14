@@ -3,9 +3,9 @@
 
 | Platform      | Problems Solved |
 | ------------- | --------------- |
-| 🟢 LeetCode   | 13              |
+| 🟢 LeetCode   | 14              |
 | 🟠 HackerRank | 2               |
-| **Total**     | **15**           |
+| **Total**     | **16**           |
 
 ---
 
@@ -15,6 +15,6 @@
 | ---------- | ----- |
 | 🟢 Easy    | 10    |
 | 🟡 Medium  | 4     |
-| 🔴 Hard    | 1     |
+| 🔴 Hard    | 2     |
 
 ---
