@@ -1,0 +1,68 @@
+/*
+NQueens I | HARD
+
+The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.
+
+Given an integer n, return all distinct solutions to the n-queens puzzle. You may return the answer in any order.
+
+Input: n = 4
+Output: 2
+Explanation: There are two distinct solutions to the 4-queens puzzle as shown.
+
+Example 2:
+
+Input: n = 1
+Output: 1
+
+
+*/
+
+
+import java.util.*;
+class Solution {
+    
+    public static boolean place(int k,int i, int[] x)
+    {
+        for(int j=0;j<k;j++)
+        {
+            if((x[j]==i) || (Math.abs(x[j]-i)==Math.abs(j-k)))
+                return false;
+        }
+        return true;
+    }
+
+    public static void nqueens(int k, int n, int[] x, List<List<String>> result)
+    {
+        for (int i=0;i<n;i++)
+        {
+            if(place(k,i,x))
+            {
+                x[k]=i;
+                if(k==(n-1))
+                    write(x, result);
+                else
+                    nqueens(k+1,n,x,result);
+            }
+        }
+    }
+
+    public static void write(int[] x, List<List<String>> result)
+    {
+        List <String> board = new ArrayList<>();
+        char row[]= new char[x.length];
+        for(int i=0;i<x.length;i++)
+        {
+            Arrays.fill(row,'.');
+            row[x[i]]='Q';
+            board.add(new String(row));
+        }
+        result.add(board);
+    }
+
+    public List<List<String>> solveNQueens(int n) {
+        List <List<String>> result=new ArrayList<>();
+        int x[]= new int[n];
+        nqueens(0,n,x,result);
+        return result;
+    }
+}
